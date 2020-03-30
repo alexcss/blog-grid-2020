@@ -1,0 +1,155 @@
+@font-face {font-family: "Hans Kendrick V4"; src: url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.eot"); src: url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.woff") format("woff"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/640850c0965fa5449af39df95c9970de.svg#Hans Kendrick V4") format("svg"); }
+
+body{
+	background: #e2e7ec;
+	color: #1d1d1d;
+	font: 400 16px/1.5 "Hans Kendrick V4", sans-serif;	 
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1160px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+h1,h2,h3,h4,h5,h6{
+	line-height: 1.36;
+	margin: 0 0 15px;
+}
+
+.ba-post{
+	position: relative;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+.ba-post__img-link{
+	display: block;
+}
+.ba-post__img-link img{
+	display: block;
+	width: 100%;
+}
+.ba-post__body{
+	background: #fff;
+	padding: 25px 28px;
+
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;	
+}
+.ba-post__body--abs{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+	padding: 41px 43px;
+	color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.ba-post__body--abs .ba-post__title{
+	margin-bottom: 0;
+}
+.ba-post__title{
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 70px;
+}
+.ba-post__title a{
+	text-decoration: none;
+	color: inherit;
+}
+.ba-post__title a:hover{
+	color: hotpink;
+}
+.ba-post__date{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #818181;
+	margin-bottom: 16px;
+	display: block;
+}
+.ba-post__author{
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	margin-top: auto; 
+}
+.ba-post__author:hover{
+	color: hotpink;
+}
+.ba-post__author img{
+	margin-right: 10px;
+}
+
+.ba-container{
+	/* border: 5px solid darksalmon; */
+}
+.ba-flex-grid{
+	display: flex;
+	flex-wrap: wrap;
+	/* border: 5px solid darkmagenta; */
+	margin-left: -20px;
+}
+.ba-item{
+	/* border: 5px solid hotpink; */
+	width: 33.3%;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+.ba-width-2-3{
+	width: 66.66%;
+}
